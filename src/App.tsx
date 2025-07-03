@@ -15,7 +15,7 @@ export default function App() {
         const getCityByGeolocation = async (lat: number, lon: number) => {
             try {
                 const response = await fetch(
-                    `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=${import.meta.env.VITE_API_KEY}`
+                    `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=${import.meta.env.VITE_GEOCODING_KEY}`
                 );
 
                 const data = await response.json();
